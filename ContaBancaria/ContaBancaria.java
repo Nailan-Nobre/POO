@@ -1,7 +1,7 @@
+package ContaBancaria;
 public class ContaBancaria {
-    private String numeroConta;
+    private String numero;
     private String titular;
-    private String nome;
     private double saldo;
     public double sacar() {
         return this.saldo;
