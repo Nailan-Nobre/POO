@@ -6,22 +6,34 @@ public class ContaBancaria {
 
     //metodos getters e setters
     public String getNumero() {
-        return numero;
+        return this.numero;
     }
     public void setNumero(String numero) {
         this.numero = numero;
     }
     public String getTitular() {
-        return titular;
+        return this.titular;
     }
     public void setTitular(String titular) {
         this.titular = titular;
     }
     public double getSaldo() {
-        return saldo;
+        return this.saldo;
     }
-    public void setSaldo(double saldo) {
-        this.saldo = saldo;
+
+    //metodo sacar
+    public boolean sacar(double valor) {
+        if (valor > this.saldo) {
+            this.saldo -= valor;
+            return true;
+        } else {
+            return false;
+        }
+    }
+
+    //metodo depositar
+    public void depositar(double valor) {
+        this.saldo += valor;
     }
     
 }
