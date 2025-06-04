@@ -1,7 +1,6 @@
 public abstract class Conta {
     private int numero;
     private double saldo;
-    private Cliente titular;
 
     // métodos get e set
 
@@ -18,5 +17,9 @@ public abstract class Conta {
 
     public void consultarsaldo() {
         System.out.println("Saldo da conta" + this.numero + ": R$" + this.saldo);
+    }
+
+    public double getSaldo() {
+        return this.saldo;
     }
 }
