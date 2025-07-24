@@ -1,4 +1,3 @@
-package Exemplos;
 public class Teste {
     //incrementando antes
     public static void main(String[] args) {
